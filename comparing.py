@@ -4,6 +4,9 @@ from pmdarima import auto_arima
 from prophet import Prophet
 from statsmodels.tsa.holtwinters import ExponentialSmoothing
 from sklearn.metrics import mean_squared_error
+import random
+import pmdarima
+
 
 def time_series_models_comparison():
     random.seed(123)
@@ -53,3 +56,8 @@ def time_series_models_comparison():
     'forecasts': forecasts,
     'errors': errors
     }
+
+
+# if __name__ == "__main__":
+#     result = time_series_models_comparison()
+#     print(result)
